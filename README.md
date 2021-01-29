@@ -17,10 +17,12 @@ yarn add bools
 # Usage
 
 ```javascript
+const { Bools } = require('bools')
+
 // define boolean fields
 const userBools = new Bools([
-	'isAdmin',
-	'isVip',
+    'isAdmin',
+    'isVip',
     'isAuthed',
     'isBanned'
 ])
@@ -36,7 +38,7 @@ console.log(userBoolsNum)  // --> 4
 
 // covert a number to a field-value object
 let userBoolsObj = userBools.toObj(userBoolsNum)
-console.log(userBoolsObj)  // --> {isAdmin: false, isVip: false, isAuthed: true, isBanned: false}
+console.log(userBoolsObj)  // --> { isAdmin: false, isVip: false, isAuthed: true, isBanned: false }
 
 ```
 
